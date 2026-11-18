@@ -1,0 +1,78 @@
+{
+  "company_name_ar": "الشركة النموذجية للتجارة",
+  "company_name_en": "Sample Retail Co.",
+  "accent_color": "#1D54B5",
+  "accent2_color": "#5BC2E7",
+  "logo_data_uri": "",
+  "currency": "SAR",
+  "shortage_account": "SHORTAGE-ACC",
+  "description_template": "إيداع بنكي: {deposit_acc}-{network}, {currency}. 000001",
+  "clearing_accounts": {
+    "master": "CLEARING-MASTERCARD",
+    "mada": "CLEARING-MADA",
+    "visa": "CLEARING-VISA",
+    "gccnet": "CLEARING-GCCNET",
+    "amex": "CLEARING-AMEX",
+    "discover": "CLEARING-DISCOVER",
+    "unionpay": "CLEARING-UNIONPAY",
+    "maestro": "CLEARING-MAESTRO"
+  },
+  "branch_groups": [
+    {
+      "id": "GROUP-A",
+      "name": "Branch Group A",
+      "company_code": "GROUP-A",
+      "multi_file": false,
+      "append_branch_code_to_gl": false,
+      "accent_color": "#1D54B5",
+      "accent2_color": "#5BC2E7",
+      "shortage_account": "SHORTAGE-ACC",
+      "branches": [
+        {
+          "name": "Branch 01",
+          "code": "BR-01",
+          "bank_account": "BANK-001",
+          "deposit_account": "BANK-001",
+          "network_deposit_accounts": {}
+        },
+        {
+          "name": "Branch 02",
+          "code": "BR-02",
+          "bank_account": "BANK-002",
+          "deposit_account": "BANK-002",
+          "network_deposit_accounts": {}
+        }
+      ]
+    },
+    {
+      "id": "GROUP-B",
+      "name": "Branch Group B",
+      "company_code": "GROUP-B",
+      "multi_file": true,
+      "append_branch_code_to_gl": true,
+      "accent_color": "#0E7490",
+      "accent2_color": "#38BDF8",
+      "shortage_account": "SHORTAGE-ACC",
+      "branches": [
+        {
+          "name": "Branch 03",
+          "code": "BR-03",
+          "bank_account": "BANK-003",
+          "deposit_account": "DEP-003",
+          "network_deposit_accounts": {
+            "master": "DEP-003-MC",
+            "mada": "DEP-003-MADA",
+            "visa": "DEP-003-VISA"
+          }
+        },
+        {
+          "name": "Branch 04",
+          "code": "BR-04",
+          "bank_account": "BANK-004",
+          "deposit_account": "DEP-004",
+          "network_deposit_accounts": {}
+        }
+      ]
+    }
+  ]
+}

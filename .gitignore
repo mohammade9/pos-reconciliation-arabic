@@ -1,0 +1,27 @@
+# Local configuration & secrets
+config.json
+.env
+.streamlit/secrets.toml
+
+# Sensitive / sample accounting & receipt files
+*.xlsx
+*.xls
+*.pdf
+*.zip
+*.png
+*.jpg
+*.jpeg
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
